@@ -1,0 +1,16 @@
+{
+    "name": "airobot/hyperf",
+    "description": "this is a hyperf project",
+    "autoload": {
+        "psr-4": {
+            "Airobot\\Hyperf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "airobot",
+            "email": "2274642118@qq.com"
+        }
+    ],
+    "require": {}
+}
