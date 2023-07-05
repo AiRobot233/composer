@@ -13,5 +13,23 @@
         }
     ],
     "require": {
+        "php": ">=8.0",
+        "firebase/php-jwt": "^6.4",
+        "hyperf/cache": "~3.0.0",
+        "hyperf/command": "~3.0.0",
+        "hyperf/config": "~3.0.0",
+        "hyperf/constants": "~3.0.0",
+        "hyperf/database": "~3.0.0",
+        "hyperf/db-connection": "~3.0.0",
+        "hyperf/filesystem": "^3.0",
+        "hyperf/framework": "~3.0.0",
+        "hyperf/guzzle": "~3.0.0",
+        "hyperf/http-server": "~3.0.0",
+        "hyperf/logger": "~3.0.0",
+        "hyperf/memory": "~3.0.0",
+        "hyperf/paginator": "^3.0",
+        "hyperf/process": "~3.0.0",
+        "hyperf/redis": "~3.0.0",
+        "hyperf/validation": "^3.0"
     }
 }
