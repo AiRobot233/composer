@@ -12,5 +12,7 @@
             "email": "2274642118@qq.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=8.0"
+    }
 }
