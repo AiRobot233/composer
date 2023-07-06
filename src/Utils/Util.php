@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Utils;
+namespace Airobot\Hyperf\Utils;
 
 use Hyperf\Paginator\LengthAwarePaginator;
 

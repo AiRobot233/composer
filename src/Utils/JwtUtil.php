@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Utils;
+namespace Airobot\Hyperf\Utils;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;

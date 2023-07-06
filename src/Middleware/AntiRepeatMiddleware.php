@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Middleware;
+namespace Airobot\Hyperf\Middleware;
 
-use App\Utils\Tool;
+use Airobot\Hyperf\Utils\Tool;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Contract\ResponseInterface as HttpResponse;
 use Hyperf\HttpServer\Router\Dispatched;

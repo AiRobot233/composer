@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\admin\org;
+namespace Airobot\Hyperf\Services\admin\org;
 
-use App\Model\Role;
-use App\Model\Rule;
-use App\Utils\Tool;
-use App\Utils\Util;
+use Airobot\Hyperf\Model\Role;
+use Airobot\Hyperf\Model\Rule;
+use Airobot\Hyperf\Utils\Tool;
+use Airobot\Hyperf\Utils\Util;
 use Hyperf\Context\Context;
 use Hyperf\DbConnection\Db;
 use Hyperf\Di\Annotation\Inject;

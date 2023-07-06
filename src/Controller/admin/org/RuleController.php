@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Controller\admin\org;
+namespace Airobot\Hyperf\Controller\admin\org;
 
-use App\Middleware\AuthMiddleware;
-use App\Middleware\LoginMiddleware;
-use App\Request\RuleRequest;
-use App\Services\admin\org\RuleService;
-use App\Utils\Tool;
+use Airobot\Hyperf\Middleware\AuthMiddleware;
+use Airobot\Hyperf\Middleware\LoginMiddleware;
+use Airobot\Hyperf\Request\RuleRequest;
+use Airobot\Hyperf\Services\admin\org\RuleService;
+use Airobot\Hyperf\Utils\Tool;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\Middlewares;

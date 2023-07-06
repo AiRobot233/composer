@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\admin\org;
+namespace Airobot\Hyperf\Services\admin\org;
 
-use App\Model\Role;
-use App\Utils\Util;
+use Airobot\Hyperf\Model\Role;
+use Airobot\Hyperf\Utils\Util;
 use Hyperf\Di\Annotation\Inject;
 
 class RoleService

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Controller\admin\org;
+namespace Airobot\Hyperf\Controller\admin\org;
 
-use App\Middleware\AntiRepeatMiddleware;
-use App\Middleware\AuthMiddleware;
-use App\Middleware\LoginMiddleware;
-use App\Request\UserRequest;
-use App\Services\admin\org\UserService;
-use App\Utils\Tool;
+use Airobot\Hyperf\Middleware\AntiRepeatMiddleware;
+use Airobot\Hyperf\Middleware\AuthMiddleware;
+use Airobot\Hyperf\Middleware\LoginMiddleware;
+use Airobot\Hyperf\Request\UserRequest;
+use Airobot\Hyperf\Services\admin\org\UserService;
+use Airobot\Hyperf\Utils\Tool;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\Middlewares;

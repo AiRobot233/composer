@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Middleware;
+namespace Airobot\Hyperf\Middleware;
 
-use App\Model\User;
-use App\Utils\JwtUtil;
-use App\Utils\Tool;
+use Airobot\Hyperf\Model\User;
+use Airobot\Hyperf\Utils\JwtUtil;
+use Airobot\Hyperf\Utils\Tool;
 use Hyperf\HttpMessage\Stream\SwooleStream;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Contract\ResponseInterface as HttpResponse;

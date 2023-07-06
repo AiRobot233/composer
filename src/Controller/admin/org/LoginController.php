@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Controller\admin\org;
+namespace Airobot\Hyperf\Controller\admin\org;
 
-use App\Services\admin\org\LoginService;
-use App\Utils\Tool;
+use Airobot\Hyperf\Services\admin\org\LoginService;
+use Airobot\Hyperf\Utils\Tool;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\RequestMapping;

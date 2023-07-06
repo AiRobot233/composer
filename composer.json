@@ -3,7 +3,7 @@
     "description": "this is a hyperf project",
     "autoload": {
         "psr-4": {
-            "Airobot\\Hyperf\\": "src/"
+            "Airobot\\Hyperf\\": "src"
         },
         "files": [
             "../../../app/functions.php"

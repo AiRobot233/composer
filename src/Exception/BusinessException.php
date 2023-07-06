@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-namespace App\Exception;
+namespace Airobot\Hyperf\Exception;
 
-use App\Constants\ErrorCode;
+use Airobot\Hyperf\Constants\ErrorCode;
 use Hyperf\Server\Exception\ServerException;
 use Throwable;
 

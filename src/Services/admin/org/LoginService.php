@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\admin\org;
+namespace Airobot\Hyperf\Services\admin\org;
 
-use App\Model\User;
-use App\Utils\JwtUtil;
-use App\Utils\Tool;
+use Airobot\Hyperf\Model\User;
+use Airobot\Hyperf\Utils\JwtUtil;
+use Airobot\Hyperf\Utils\Tool;
 use Hyperf\Di\Annotation\Inject;
 
 class LoginService

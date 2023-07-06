@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Model;
+namespace Airobot\Hyperf\Model;
 
-use App\Utils\Tool;
+use Airobot\Hyperf\Utils\Tool;
 use Hyperf\Database\Model\Events\Deleting;
 use Hyperf\Database\Model\SoftDeletes;
 use Hyperf\DbConnection\Model\Model;

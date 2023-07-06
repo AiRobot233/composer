@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Model;
+namespace Airobot\Hyperf\Model;
 
-use App\Utils\Tool;
-use App\Utils\Util;
+use Airobot\Hyperf\Utils\Tool;
+use Airobot\Hyperf\Utils\Util;
 use Hyperf\Database\Model\Events\Deleting;
 use Hyperf\Database\Model\Events\Saving;
 use Hyperf\Database\Model\SoftDeletes;

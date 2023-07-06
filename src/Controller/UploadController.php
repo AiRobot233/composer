@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controller;
+namespace Airobot\Hyperf\Controller;
 
-use App\Middleware\LoginMiddleware;
-use App\Utils\Tool;
-use App\Utils\Util;
+use Airobot\Hyperf\Middleware\LoginMiddleware;
+use Airobot\Hyperf\Utils\Tool;
+use Airobot\Hyperf\Utils\Util;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\Middleware;
