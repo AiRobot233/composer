@@ -18,7 +18,7 @@ class AuthController
     #[Inject]
     private AuthService $authService;
 
-    #[RequestMapping(path: "/admin/auth", methods: "get")]
+    #[RequestMapping(path: "/admin/routes", methods: "get")]
     public function auth(): ResponseInterface
     {
         return Tool::OK($this->authService->auth());
