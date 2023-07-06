@@ -20,7 +20,7 @@ class SubController
     #[Inject]
     private SubService $subService;
 
-    #[RequestMapping(path: "/admin/subassembly", methods: "post")]
+    #[RequestMapping(path: "/admin/sub", methods: "post")]
     public function subassembly(RequestInterface $request): ResponseInterface
     {
         $data = $request->post();
