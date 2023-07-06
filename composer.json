@@ -1,5 +1,6 @@
 {
     "name": "airobot/hyperf",
+    "version": "1.0.1",
     "description": "this is a hyperf project",
     "autoload": {
         "psr-4": {
