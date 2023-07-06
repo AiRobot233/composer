@@ -9,6 +9,11 @@
             "../../../app/functions.php"
         ]
     },
+    "extra": {
+        "hyperf": {
+            "config": "Airobot\\Hyperf\\ConfigProvider"
+        }
+    },
     "authors": [
         {
             "name": "airobot",
