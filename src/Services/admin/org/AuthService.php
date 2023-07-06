@@ -23,10 +23,10 @@ class AuthService
         if (empty($role)) Tool::E('角色不存在!');
         if ($role->is_system == 1) {
             $rules = explode(',', $role->rule);
-            $rule = Rule::query()->whereIn('id', $rules)->get();
+            $rule = Rule::query()->where('type', 'page')->whereIn('id', $rules)->get();
             $roles = Db::select("SELECT b.router,a.operation FROM rule AS b LEFT JOIN (SELECT pid,GROUP_CONCAT(tag) AS operation FROM `rule` WHERE type = 'api' AND id IN ({$role->rule}) GROUP BY pid) AS a ON a.pid = b.id WHERE a.operation IS NOT NULL");
         } else {
-            $rule = Rule::query()->get();
+            $rule = Rule::query()->where('type', 'page')->get();
             $roles = Db::select("SELECT b.router,a.operation FROM rule AS b LEFT JOIN (SELECT pid,GROUP_CONCAT(tag) AS operation FROM `rule` WHERE type = 'api' GROUP BY pid) AS a ON a.pid = b.id WHERE a.operation IS NOT NULL");
         }
         $tree = $this->util->arrayToTree($rule->toArray());
