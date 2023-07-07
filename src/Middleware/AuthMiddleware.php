@@ -37,19 +37,12 @@ class AuthMiddleware implements MiddlewareInterface
         $role = Role::query()->where('id', $user['role_id'])->first(['is_system', 'rule']);
         if (empty($role)) Tool::E('角色已被删除!');
         if ($role->is_system == 1) {
-            $path = $this->request->getPathInfo();
+            $path = $this->request->getAttribute(Dispatched::class)->handler->route;
             $method = $this->request->getMethod();
-            //判断put delete 删除最后一位id数据
-            if ($method == 'PUT' || $method == 'DELETE') {
-                $arr = explode('/', $path);
-                array_pop($arr);
-                $path = implode('/', $arr);
-            }
             $rule = explode(',', $role->rule);
             $r = Rule::query()->whereIn('id', $rule)->where(['router' => $path, 'method' => $method])->exists();
             if (!$r) Tool::E('无权限访问!');
         }
-
         return $handler->handle($request);
     }
 }
